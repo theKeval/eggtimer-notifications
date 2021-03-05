@@ -45,7 +45,7 @@
                 android:exported="false">
         </receiver>
 
-        TODO: Step 3.0 uncomment to start the service
+        <!-- TODO: Step 3.0 uncomment to start the service -->
         <service
             android:name=".MyFirebaseMessagingService"
             android:exported="false">
