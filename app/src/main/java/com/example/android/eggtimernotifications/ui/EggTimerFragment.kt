@@ -67,7 +67,7 @@ class EggTimerFragment : Fragment() {
                 .apply {
                     setShowBadge(false)
                 }
-            
+
             notificationChannel.enableLights(true)
             notificationChannel.lightColor = Color.RED
             notificationChannel.enableVibration(true)
