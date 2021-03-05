@@ -43,6 +43,10 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         // TODO Step 3.6 check messages for notification and call sendNotification
         // Check if message contains a notification payload.
+        remoteMessage?.notification?.let {
+            Log.d(TAG, "Message notification body: ${it.body}")
+            sendNotification(it.body!!)
+        }
 
     }
     // [END receive_message]
